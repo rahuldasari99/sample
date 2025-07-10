@@ -1,0 +1,108 @@
+.navbar {
+  position: relative; /* add this */
+  height: 50px;
+  font-size: 30px;
+  padding: 1px;
+  
+}
+.bi-list,
+.bi-search,
+.bi-cart,
+.bi-person-fill {
+  position: absolute;
+  top: 20px; /* align all to same vertical line */
+}
+
+.bi-list {
+  left: 20px;
+}
+
+.bi-search {
+  left: 80px;
+}
+
+.bi-cart {
+  left: 1330px;
+}
+
+.bi-person-fill {
+  left: 1370px; /* adjust spacing if needed */
+}
+
+.cardlayout{
+   
+
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+  
+    
+}
+.cards{
+  
+   
+    height: 439.53125px;
+    width: 350px;
+    display: inline-block;
+    margin: 10px 50px;
+   
+}
+.card-image{
+    height: 439.53125px;
+    width: 350px;
+}
+.card-info{
+    
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 100%;
+
+    
+}
+p{
+    font-family: 'Instrument Sans';
+    font-size: 15px;
+}
+
+    .nav-links{
+        display: block;
+        text-decoration: none;
+        font-size:18px ;
+        font-family:  'Instrument Sans';
+        margin: 10px;
+        color: white;
+        text-transform: capitalize;
+    }
+    .nav-links:hover{
+        color: black;
+    }
+
+    
+.profile-menu{
+    position: absolute;
+    left: 1280px;
+    top:30px;
+    background-color: gray;
+    border-radius: 15px;
+    padding: 10px;
+    
+   
+   
+    height: 150px;
+    width: 130px;
+    display: none;
+
+
+}
+.profile-dropdown{
+   
+    position: relative;
+    margin:0px;
+    padding: 10px;
+}
+.profile-dropdown:hover .profile-menu{
+    display: block;
+}
