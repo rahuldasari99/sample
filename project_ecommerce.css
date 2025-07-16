@@ -1,108 +1,209 @@
-.navbar {
-  position: relative; /* add this */
-  height: 50px;
-  font-size: 30px;
-  padding: 1px;
-  
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Instrument Sans;
 }
-.bi-list,
-.bi-search,
-.bi-cart,
-.bi-person-fill {
-  position: absolute;
-  top: 20px; /* align all to same vertical line */
+.nav{
+    /* border: 2px solid black; */
+    height: 80px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 }
-
-.bi-list {
-  left: 20px;
-}
-
-.bi-search {
-  left: 80px;
-}
-
-.bi-cart {
-  left: 1330px;
-}
-
-.bi-person-fill {
-  left: 1370px; /* adjust spacing if needed */
-}
-
-.cardlayout{
+.nav-links{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
    
+    height: 80px;
+    width: 300px;
+    list-style-type: none;
+    text-transform: capitalize;
+    font-weight: 1000;
+    color: white;
+    
 
-    height: 100%;
-    width: 100%;
-    padding: 50px;
-  
+}
+.nav-links:hover{
+    transform: scale(1.1,1.1);
+}
+.btn1{
+    display: flex;
+    border: 2px solid black;
+    height:80px;
+    width:300px;
+    align-items: center;
+    justify-content: space-around;
+   
+    
+    
+    
+}
+.button{
+    padding:5px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    
     
 }
 .cards{
-  
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
    
-    height: 439.53125px;
-    width: 350px;
-    display: inline-block;
-    margin: 10px 50px;
    
 }
-.card-image{
-    height: 439.53125px;
-    width: 350px;
+.tshirt{
+   /* border:2px solid black;*/
+    width: 300px;
+    height: 450px;
+    transition: all .5s linear;
+   
+   
+   
 }
-.card-info{
+/* .tshirt:hover{
+     animation: bcolor 2s infinite alternate;
+}
+@keyframes bcolor {
+    from{
+        background-color: white;
+    }to{
+        background-color: black;
+    }
     
-}
-.btn{
-    background-color: black;
-    color: white;
-    padding: 10px;
+} */
+.shirt-img{
     width: 100%;
 
-    
 }
-p{
-    font-family: 'Instrument Sans';
-    font-size: 15px;
+.card-info{
+    font-family: Instrument Sans;
+    color: rgb(49, 49, 49);
+    font-size: 12px;
+
 }
-
-    .nav-links{
-        display: block;
-        text-decoration: none;
-        font-size:18px ;
-        font-family:  'Instrument Sans';
-        margin: 10px;
-        color: white;
-        text-transform: capitalize;
-    }
-    .nav-links:hover{
-        color: black;
-    }
-
-    
-.profile-menu{
+.btn{
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    border: none;
+   
+   
+}
+.card-price{
+    line-height: 20px;
+}
+.tshirt:hover{
+    transform: scaleY(1.1) scaleX(1.1);
+}
+li:hover{
+    background-color: black;
+    color: white;
+}
+.login_menu form{
+    z-index: 1;
+    border: 2px solid black;
+    height: 300px;
+    width:290px;
     position: absolute;
-    left: 1280px;
-    top:30px;
-    background-color: gray;
-    border-radius: 15px;
-    padding: 10px;
+    top: 60px;
+    right: 170px;
+    background-color: rgba(0, 0, 0, 0.8);;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+     cursor: pointer;
+     color: aliceblue;
+      display: none;
+   
+}
+label , input{
+    display: block;
+    font-size: 20px;
+    margin-top: 20px;
+    
+}
+.login-h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+     margin-bottom: 20px;
+}
+.btn1:hover .login_menu form{
     
    
-   
-    height: 150px;
-    width: 130px;
-    display: none;
-
-
-}
-.profile-dropdown{
-   
-    position: relative;
-    margin:0px;
-    padding: 10px;
-}
-.profile-dropdown:hover .profile-menu{
     display: block;
 }
+.tcompany{
+    color: white;
+   
+    margin: 20px 0px;
+    
+}
+.login-btn{
+    
+    width: 100px;
+    padding: 5px 10px;
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    margin-top: 20px;
+    margin-left: 90px;
+    border:  none;
+   
+}
+/* .banner{
+    height: 400px;
+    width: 100%;
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+    transition: transform;
+    transition-duration:10s ;
+}
+.banner-img{
+    width: 100%;
+} */
+.banner-container {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+    }
+
+    .banner-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1);
+      transition: transform 1.5s ease;
+      animation: zoomIn 5s ease-in-out infinite alternate;
+    }
+
+    .banner-container:hover img {
+      transform: scale(1.1);
+    }
+
+    
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.05);
+      }
+    }
+
+    
