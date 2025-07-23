@@ -67,7 +67,8 @@ a{
     height: 400px;
     width: 300px;
     margin-bottom: 30px;
-    border: none;
+    border:none;
+   
 
 }
 .card-img{
@@ -99,7 +100,7 @@ a{
 
 
 
-@media screen and (max-width:500px) {
+@media (max-width: 660px) {
    
     .nav{
         flex-direction: column;
@@ -124,4 +125,21 @@ a{
           margin-bottom: 10px;
     }
     
+}
+@media (max-width: 500px) {
+    
+.card{
+    border: 2px solid black;
+    height: 300px;
+    width: 200px;
+    margin-bottom:30px;
+    border: none;
+
+   
+
+}
+.card-info{
+    font-size: 13px;
+    
+}
 }
